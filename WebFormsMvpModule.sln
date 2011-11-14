@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsMvpModule", "WebFormsMvpModule.csproj", "{B09CD667-5A3B-42D9-A39B-C2FA9F4E193D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{64ACE696-4A75-4F21-A9D0-FA29E6D6A659}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNetNuke", "DotNetNuke", "{9CF5F391-7416-4476-8E8D-AB812D2A84B9}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\DotNetNuke\DotNetNuke.dll = Dependencies\DotNetNuke\DotNetNuke.dll
+		Dependencies\DotNetNuke\DotNetNuke.Web.Client.dll = Dependencies\DotNetNuke\DotNetNuke.Web.Client.dll
+		Dependencies\DotNetNuke\DotNetNuke.Web.dll = Dependencies\DotNetNuke\DotNetNuke.Web.dll
+		Dependencies\DotNetNuke\WebFormsMvp.dll = Dependencies\DotNetNuke\WebFormsMvp.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildScripts", "BuildScripts", "{60AE294D-BA84-4BBF-820B-0C61A815869A}"
+	ProjectSection(SolutionItems) = preProject
+		BuildScripts\ModulePackage.targets = BuildScripts\ModulePackage.targets
+		BuildScripts\MSBuild.Community.Tasks.Targets = BuildScripts\MSBuild.Community.Tasks.Targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSBuild Community Tasks", "MSBuild Community Tasks", "{3D49F947-1865-4C5D-9DFE-84E108812068}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\MSBuild Community Tasks\MSBuild.Community.Tasks.msi = Dependencies\MSBuild Community Tasks\MSBuild.Community.Tasks.msi
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MbUnit", "MbUnit", "{E750410D-4B01-4AB7-92EF-3EBC3CD5F0C2}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\MbUnit\Gallio.dll = Dependencies\MbUnit\Gallio.dll
+		Dependencies\MbUnit\MbUnit.dll = Dependencies\MbUnit\MbUnit.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Moq", "Moq", "{93B1F84E-5C57-427F-8189-53B4B452F26D}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\Moq\Moq.chm = Dependencies\Moq\Moq.chm
+		Dependencies\Moq\Moq.dll = Dependencies\Moq\Moq.dll
+		Dependencies\Moq\Moq.pdb = Dependencies\Moq\Moq.pdb
+		Dependencies\Moq\Moq.xml = Dependencies\Moq\Moq.xml
+	EndProjectSection
+EndProject
+Project("{00000000-0000-0000-0000-000000000000}") = "WebFormsMvpModule.Tests", "WebFormsMvpModule.Tests\WebFormsMvpModule.Tests.csproj", "{15B6292D-AE86-42A7-B2D4-BA5FA74D98D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B09CD667-5A3B-42D9-A39B-C2FA9F4E193D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09CD667-5A3B-42D9-A39B-C2FA9F4E193D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09CD667-5A3B-42D9-A39B-C2FA9F4E193D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09CD667-5A3B-42D9-A39B-C2FA9F4E193D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B6292D-AE86-42A7-B2D4-BA5FA74D98D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B6292D-AE86-42A7-B2D4-BA5FA74D98D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B6292D-AE86-42A7-B2D4-BA5FA74D98D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B6292D-AE86-42A7-B2D4-BA5FA74D98D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9CF5F391-7416-4476-8E8D-AB812D2A84B9} = {64ACE696-4A75-4F21-A9D0-FA29E6D6A659}
+		{3D49F947-1865-4C5D-9DFE-84E108812068} = {64ACE696-4A75-4F21-A9D0-FA29E6D6A659}
+		{E750410D-4B01-4AB7-92EF-3EBC3CD5F0C2} = {64ACE696-4A75-4F21-A9D0-FA29E6D6A659}
+		{93B1F84E-5C57-427F-8189-53B4B452F26D} = {64ACE696-4A75-4F21-A9D0-FA29E6D6A659}
+	EndGlobalSection
+EndGlobal
