@@ -1,4 +1,4 @@
-﻿namespace WebFormsMvpModule.Tests
+﻿namespace $Namespace$$safeprojectname$.Tests
 {
     using MbUnit.Framework;
 

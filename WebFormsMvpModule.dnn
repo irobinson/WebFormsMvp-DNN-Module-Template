@@ -1,13 +1,15 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="WebFormsMvpModule" type="Module" version="00.00.02">
+    <package name="$safeprojectname$" type="Module" version="00.00.01">
      
-      <friendlyName>WebFormsMvp Module</friendlyName>
-      <description></description>
+      <friendlyName>$safeprojectname$</friendlyName>
+      <description>$YourCompany$ $safeprojectname$ Module</description>
       
       <owner>
-        <name>Ian Robinson</name>
-        <url>http://github.com/irobinson</url>
+        <name>$YourCompany$</name>
+        <organization>$YourCompany$</organization>
+        <url>$YourWebsite$</url>
+        <email>$YourEmail$</email>
       </owner>
       
       <license src="License.html"/>
@@ -24,7 +26,7 @@
         <!-- http://www.dotnetnuke.com/Resources/Wiki/Page/Manifest-ResourceFile-Component.aspx -->
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>DesktopModules/WebFormsMvpModule</basePath>
+            <basePath>DesktopModules/$safeprojectname$</basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>
@@ -35,18 +37,18 @@
         <!-- http://www.dotnetnuke.com/Resources/Wiki/Page/Manifest-Module-Component.aspx-->
         <component type="Module">
           <desktopModule>
-            <moduleName>WebFormsMvp Module</moduleName>
-            <foldername>WebFormsMvpModule</foldername>
+            <moduleName>$safeprojectname$</moduleName>
+            <foldername>$safeprojectname$</foldername>
             <moduleDefinitions>
               <moduleDefinition>
-                <friendlyName>WebFormsMvp Module</friendlyName>
+                <friendlyName>$safeprojectname$</friendlyName>
                 <defaultCacheTime>0</defaultCacheTime>
                 <moduleControls>
                   <moduleControl>
                     <!-- the default view control uses an empty key by convention -->
                     <!-- all other registered controls require a key -->
                     <controlKey />
-                    <controlSrc>DesktopModules/WebFormsMvpModule/Views/View.ascx</controlSrc>
+                    <controlSrc>DesktopModules/$safeprojectname$/Views/View.ascx</controlSrc>
                     <supportsPartialRendering>False</supportsPartialRendering>
                     <controlTitle />
                     <controlType>View</controlType>
@@ -55,7 +57,7 @@
                   </moduleControl>
                   <moduleControl>
                     <controlKey>Edit</controlKey>
-                    <controlSrc>DesktopModules/WebFormsMvpModule/Views/Edit.ascx</controlSrc>
+                    <controlSrc>DesktopModules/$safeprojectname$/Views/Edit.ascx</controlSrc>
                     <supportsPartialRendering>False</supportsPartialRendering>
                     <controlTitle />
                     <controlType>Edit</controlType>
@@ -64,7 +66,7 @@
                   </moduleControl>
                   <moduleControl>
                     <controlKey>Settings</controlKey>
-                    <controlSrc>DesktopModules/WebFormsMvpModule/Views/Settings.ascx</controlSrc>
+                    <controlSrc>DesktopModules/$safeprojectname$/Views/Settings.ascx</controlSrc>
                     <supportsPartialRendering>False</supportsPartialRendering>
                     <controlTitle />
                     <controlType>Edit</controlType>
@@ -82,7 +84,7 @@
           <assemblies>
             <basePath>bin</basePath>
             <assembly>
-              <name>WebFormsMvpModule.dll</name>
+              <name>$safeprojectname$.dll</name>
             </assembly>
           </assemblies>
         </component>
@@ -93,7 +95,7 @@
         <!--
         <component type="Script">
           <scripts>
-            <basePath>DesktopModules\WebFormsMvpModule</basePath>
+            <basePath>DesktopModules\$safeprojectname$</basePath>
             <script type="Install">
               <path>SqlScripts</path>
               <name>00.00.01.SqlDataProvider</name>

@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" CodeBehind="Settings.ascx.cs" Inherits="WebFormsMvpModule.Views.Settings" %>
+﻿<%@ Control Language="C#" CodeBehind="Settings.ascx.cs" Inherits="$Namespace$$safeprojectname$.Views.Settings" %>
 <%@ Register TagPrefix="dnn" TagName="Label" Src="~/controls/labelcontrol.ascx" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
 

@@ -1,4 +1,4 @@
-﻿namespace WebFormsMvpModule.Models
+﻿namespace $Namespace$$safeprojectname$.Models
 {
     public class ViewModel
     {

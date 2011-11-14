@@ -10,8 +10,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebFormsMvpModule</RootNamespace>
-    <AssemblyName>WebFormsMvpModule</AssemblyName>
+    <RootNamespace>$NameSpace$$safeprojectname$</RootNamespace>
+    <AssemblyName>$safeprojectname$</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -48,7 +48,10 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
     <Reference Include="WebFormsMvp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=537f18701145dff0, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dependencies\DotNetNuke\WebFormsMvp.dll</HintPath>
@@ -86,6 +89,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Dependencies\DotNetNuke\DotNetNuke.dll" />
+    <Content Include="Dependencies\DotNetNuke\DotNetNuke.Web.Client.dll" />
+    <Content Include="Dependencies\DotNetNuke\DotNetNuke.Web.dll" />
+    <Content Include="Dependencies\DotNetNuke\WebFormsMvp.dll" />
+    <Content Include="Documentation\Welcome.css" />
+    <Content Include="Documentation\Welcome.htm" />
     <Content Include="Views\App_LocalResources\Edit.ascx.resx" />
   </ItemGroup>
   <ItemGroup>
@@ -103,8 +112,11 @@
     <Content Include="Views\View.ascx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="BuildScripts\ModulePackage.targets" />
+    <None Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
+    <None Include="Dependencies\MSBuild Community Tasks\MSBuild.Community.Tasks.msi" />
     <None Include="README.md" />
-    <None Include="WebFormsMvpModule.dnn" />
+    <None Include="$safeprojectname$.dnn" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\App_LocalResources\View.ascx.resx" />
@@ -125,8 +137,8 @@
   </ProjectExtensions>
   <PropertyGroup>
     <Extension>zip</Extension>
-    <DNNFileName>WebFormsMvpModule</DNNFileName>
-    <PackageName>WebFormsMvpModule</PackageName>
+    <DNNFileName>$safeprojectname$</DNNFileName>
+    <PackageName>$safeprojectname$</PackageName>
     <MSBuildCommunityTasksPath>$(MSBuildProjectDirectory)\BuildScripts</MSBuildCommunityTasksPath>
   </PropertyGroup>
   <Import Project="BuildScripts\ModulePackage.Targets" />

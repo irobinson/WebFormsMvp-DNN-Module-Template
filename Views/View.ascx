@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="false" CodeBehind="View.ascx.cs" Inherits="WebFormsMvpModule.Views.View" %>
+﻿<%@ Control Language="C#" AutoEventWireup="false" CodeBehind="View.ascx.cs" Inherits="$Namespace$$safeprojectname$.Views.View" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
 
 <!-- Include the necessary client resources for this control -->

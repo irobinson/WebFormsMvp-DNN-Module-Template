@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebFormsMvpModule.Views {
+namespace $Namespace$$safeprojectname$.Views {
     
     
     public partial class Edit {

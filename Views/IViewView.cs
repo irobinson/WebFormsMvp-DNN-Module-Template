@@ -1,4 +1,4 @@
-﻿namespace WebFormsMvpModule.Views
+﻿namespace $Namespace$$safeprojectname$.Views
 {
     using DotNetNuke.Web.Mvp;
 
