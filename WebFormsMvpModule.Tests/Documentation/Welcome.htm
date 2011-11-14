@@ -6,62 +6,13 @@
 </head>
 <body>
     <div>
-        <h1>
-            $YourCompany$ $safeprojectname$ Module</h1>
+        <h1>$YourCompany$ $safeprojectname$ Test Project</h1>
         <hr />
-        <h2>
-            * Important *</h2>
-        <p>
-            When creating a project using this template, you should have named your project
-            simply "ModuleName", not "$YourCompany$ModuleName". If you didn&#39;t do this, the
-            easiest thing to do is close the solution, delete the folder from your DesktopModules
-            folder, then create a new project.</p>
-        <p>
-            Due to limitations in the templating capabilities of Visual Studio, you will need
-            to make some minor changes, and double check a few things, before you package this module.</p>
-        <ol>
-            <li><strong style="font-weight: bold; font-style: none">BEFORE</strong> checking the
-                module into your source control environment check the following.</li>
-            <li>Edit the Project properties by double-clicking on the Properties folder in Solution
-                Explorer</li>
-            <li>On the Application tab:
-                <ol>
-                    <li>Make sure the Assembly name textbox is set to "$safeprojectname$".</li>
-                    <li>Make sure the Default namespace is set to "$NameSpace$$safeprojectname$".</li>
-                </ol>
-            </li>
-            <li>On the Web tab:
-                <ol>
-                    <li>Under 'Start Action', make sure to set your Start URL to the correct site (ex: http://dnndev/).</li>
-                    <li>Under 'Servers', make sure to "Use IIS Web Server" with a project url of http://dnndev/desktopmodules/$safeprojectname$
-                        and an Override application root URL of http://dnndev/</li>
-                </ol>
-            </li>
-        </ol>
-        <h2>
-            Steps after your project is setup.</h2>
-        <ol>
-            <li>To Build and Package your Module you need to change to <b>Release</b> mode and then
-                simply choose Build from the Build menu. The MSBuild scripts will do the packaging
-                process for you. The packaging process creates an INSTALL and a SOURCE package in
-                the PACKAGES folder within your desktopmodule/modulename folder. </li>
-            <li>Installing your module in your development DotNetNuke instance is easy.Take the
-                SOURCE ZIP file that is created in the Packages folder, upload that using the Host/Extensions
-                page, Installation Wizard. </li>
-            <li>After you've done a release for your module (typically deploying to an environment
-                outside of your development environment) you should change the Version number, you
-                need to do this in two places, the assemblyinfo file, and the .DNN manifest file.
-                Next time you build the module in release mode you will get a new package (using
-                the version number) created.</li>
-            <li>For more information visit our <a href="http://www.dotnetnuke.com/Resources/Training.aspx">
-                DotNetNuke Training page</a>.</li>
-        </ol>
-        <p>
-            After you are finished with the Documentation you can delete the Documentation directory
-            from your project.
-        </p>
+        <h2>* Important *</h2>
+        <p>This test project is set up using <a href="http://www.mbunit.com/">MbUnit</a> and <a href="http://code.google.com/p/moq/">Moq</a>. When you start writing tests, you'll probably need to add a project reference to the other project.</p>
+        <p>You may want to exclude the Dependencies folder from your project, and add it as a Solution Folder. This is a helpful organization technique. The folder and the files need to be on disk, but they do not need to be explicitly part of your project.</p>
+        <p>After you are finished with the Documentation you can delete the Documentation directory from your project.</p>
         <hr />
-        <br />
     </div>
 </body>
 </html>
