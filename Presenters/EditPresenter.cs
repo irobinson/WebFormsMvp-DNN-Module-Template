@@ -16,6 +16,8 @@
             // pluck properties from args (save in database?)
 
             // update the view's model as appropriate (success or error message?)
+            this.View.Model.Success = true;
+            this.View.Model.Message = LocalizeString("Success.Text");
         }
     }
 }

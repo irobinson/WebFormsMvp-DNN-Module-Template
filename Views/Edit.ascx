@@ -1,5 +1,4 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="false" CodeBehind="Edit.ascx.cs" Inherits="WebFormsMvpModule.Views.Edit" %>
-<%@ Control Language="C#" ClassName="DNNWorld" Inherits="WebFormsMvpModule.Views.Edit" %>
 <%@ Register TagPrefix="dnn" TagName="Label" Src="~/controls/labelcontrol.ascx" %>
 
 <style type="text/css">

@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="WebFormsMvpModule" type="Module" version="00.00.01">
+    <package name="WebFormsMvpModule" type="Module" version="00.00.02">
      
       <friendlyName>WebFormsMvp Module</friendlyName>
       <description></description>

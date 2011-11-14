@@ -11,14 +11,9 @@
     {
         public event EventHandler<SaveClickEventArgs> SaveClick;
 
-        protected override void OnInit(EventArgs e)
-        {
-            Load += PageLoad;
-            this.SaveButton.Click += SaveButtonClick;
-        }
-
         protected void PageLoad(object sender, EventArgs e)
         {
+            this.SaveButton.Click += SaveButtonClick;
         }
 
         public void SaveButtonClick(object sender, EventArgs e)

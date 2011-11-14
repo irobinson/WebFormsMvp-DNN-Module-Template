@@ -1,21 +1,31 @@
 ﻿namespace WebFormsMvpModule.Views
 {
-    using System;
-    using DotNetNuke.Web.Mvp;
-    using Models;
-    using Presenters;
-    using WebFormsMvp;
+    using DotNetNuke.Entities.Modules;
 
-    [PresenterBinding(typeof(EditPresenter))]
-    public partial class Settings : ModuleView<SettingsModel>, ISettingsView
+    public partial class Settings : ModuleSettingsBase
     {
-        protected override void OnInit(EventArgs e)
+        public override void LoadSettings()
         {
-            Load += PageLoad;
+            base.LoadSettings();
+
+            // pull out settings for this module
+            // this HashTable includes both ModuleSettings and TabModuleSettings
+            var description = this.Settings["DescriptionText"];
+
+            // it will be null if the setting hasn't been set before
+            DescriptionTextBox.Text = description == null ? string.Empty : description.ToString();
         }
 
-        protected void PageLoad(object sender, EventArgs e)
+        public override void UpdateSettings()
         {
+            base.UpdateSettings();
+            var moduleController = new ModuleController();
+ 
+            // ModuleSetting: save "sticky" settings, that stay around when a module is referenced
+            moduleController.UpdateModuleSetting(this.ModuleId, "DescriptionText", this.DescriptionTextBox.Text);
+
+            // TabModuleSetting: save settings unique to an instance of the module on a specific page
+            moduleController.UpdateTabModuleSetting(this.TabModuleId, "DescriptionText", this.DescriptionTextBox.Text);
         }
     }
 }

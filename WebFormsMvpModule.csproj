@@ -57,10 +57,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\EditModel.cs" />
-    <Compile Include="Models\SettingsModel.cs" />
     <Compile Include="Models\ViewModel.cs" />
     <Compile Include="Presenters\EditPresenter.cs" />
-    <Compile Include="Presenters\SettingsPresenter.cs" />
     <Compile Include="Presenters\ViewPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Edit.ascx.cs">
@@ -71,7 +69,6 @@
       <DependentUpon>Edit.ascx</DependentUpon>
     </Compile>
     <Compile Include="Views\IEditView.cs" />
-    <Compile Include="Views\ISettingsView.cs" />
     <Compile Include="Views\IViewView.cs" />
     <Compile Include="Views\Settings.ascx.cs">
       <DependentUpon>Settings.ascx</DependentUpon>
@@ -88,7 +85,9 @@
       <DependentUpon>View.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Views\App_LocalResources\Edit.ascx.resx" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="License.html" />
     <Content Include="module.css" />
@@ -103,9 +102,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\App_LocalResources\View.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\App_LocalResources\Edit.ascx.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\App_LocalResources\Settings.ascx.resx" />

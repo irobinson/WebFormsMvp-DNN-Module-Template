@@ -1,1 +1,1 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="View.ascx.cs" Inherits="WebFormsMvpModule.Views.View" %>
+﻿<%@ Control Language="C#" AutoEventWireup="false" CodeBehind="View.ascx.cs" Inherits="WebFormsMvpModule.Views.View" %>
