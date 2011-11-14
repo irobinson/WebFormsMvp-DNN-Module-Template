@@ -94,12 +94,6 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebFormsMvpModule.csproj">
-      <Project>{B09CD667-5A3B-42D9-A39B-C2FA9F4E193D}</Project>
-      <Name>WebFormsMvpModule</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Dependencies\DotNetNuke\DotNetNuke.dll" />
     <Content Include="Dependencies\DotNetNuke\WebFormsMvp.dll" />
     <Content Include="Dependencies\MbUnit\Gallio.dll" />
