@@ -85,7 +85,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="View.ascx.cs">View.ascx.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="View.ascx.designer.cs">View.ascx.designer.cs</ProjectItem>
       </Folder>
-      <ProjectItem ReplaceParameters="false" TargetFileName="$safeprojectname$.dnn">WebFormsMvpModule.dnn</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.dnn">WebFormsMvpModule.dnn</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>
