@@ -15,6 +15,26 @@
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="WebFormsMvpModule.Tests.csproj" File="WebFormsMvpModule.Tests.csproj" ReplaceParameters="true">
+      <Folder Name="Dependencies" TargetFolderName="Dependencies">
+        <Folder Name="DotNetNuke" TargetFolderName="DotNetNuke">
+          <ProjectItem ReplaceParameters="false" TargetFileName="DotNetNuke.dll">DotNetNuke.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="WebFormsMvp.dll">WebFormsMvp.dll</ProjectItem>
+        </Folder>
+        <Folder Name="MbUnit" TargetFolderName="MbUnit">
+          <ProjectItem ReplaceParameters="false" TargetFileName="Gallio.dll">Gallio.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="MbUnit.dll">MbUnit.dll</ProjectItem>
+        </Folder>
+        <Folder Name="Moq" TargetFolderName="Moq">
+          <ProjectItem ReplaceParameters="false" TargetFileName="Moq.chm">Moq.chm</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Moq.dll">Moq.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Moq.pdb">Moq.pdb</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Moq.xml">Moq.xml</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Documentation" TargetFolderName="Documentation">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.css">Welcome.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.htm">Welcome.htm</ProjectItem>
+      </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="EditPresenterTests.cs">EditPresenterTests.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
