@@ -1,5 +1,11 @@
 ﻿<%@ Control Language="C#" CodeBehind="Settings.ascx.cs" Inherits="WebFormsMvpModule.Views.Settings" %>
 <%@ Register TagPrefix="dnn" TagName="Label" Src="~/controls/labelcontrol.ascx" %>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
+
+<!-- Include the necessary client resources for this control -->
+<dnn:DnnJsInclude runat="server" FilePath="~/ClientResources/js/settings.js" />
+<dnn:DnnCssInclude runat="server" FilePath="~/ClientResources/css/common.css" />
+<dnn:DnnCssInclude runat="server" FilePath="~/ClientResources/css/settings.css" />
 
 <div class="dnnForm" id="form-demo">
     <asp:Label runat="server" CssClass="dnnFormMessage dnnFormInfo" ResourceKey="Intro" />

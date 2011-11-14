@@ -1,9 +1,11 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="false" CodeBehind="Edit.ascx.cs" Inherits="WebFormsMvpModule.Views.Edit" %>
 <%@ Register TagPrefix="dnn" TagName="Label" Src="~/controls/labelcontrol.ascx" %>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
 
-<style type="text/css">
-    .dnnFormItem.dnnFormHelp { margin-top: 2em; }
-</style>
+<!-- Include the necessary client resources for this control -->
+<dnn:DnnJsInclude runat="server" FilePath="~/ClientResources/js/edit.js" />
+<dnn:DnnCssInclude runat="server" FilePath="~/ClientResources/css/common.css" />
+<dnn:DnnCssInclude runat="server" FilePath="~/ClientResources/css/edit.css" />
 
 <div class="dnnForm" id="form-demo">
     <asp:Label runat="server" CssClass="dnnFormMessage dnnFormInfo" ResourceKey="Intro" />

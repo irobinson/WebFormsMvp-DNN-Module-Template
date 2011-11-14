@@ -89,8 +89,14 @@
     <Content Include="Views\App_LocalResources\Edit.ascx.resx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClientResources\css\common.css" />
+    <Content Include="ClientResources\css\edit.css" />
+    <Content Include="ClientResources\css\settings.css" />
+    <Content Include="ClientResources\js\edit.js" />
+    <Content Include="ClientResources\js\settings.js" />
+    <Content Include="ClientResources\js\view.js" />
     <Content Include="License.html" />
-    <Content Include="module.css" />
+    <Content Include="ClientResources\css\view.css" />
     <Content Include="ReleaseNotes.html" />
     <Content Include="Views\Edit.ascx" />
     <Content Include="Views\Settings.ascx" />
