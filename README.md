@@ -7,4 +7,3 @@ This module template has the following features:
 * Implements new organizational JS/CSS strategy using the DNN 6.1 Client Resource Management API
 * Includes a standard DNN module settings control, which also uses the new form patterns.
 * Includes a test project, and a test fixture for each presenter.
-* Comes with all dependencies (DNN, MbUnit, Moq, MSBuild Community Tasks)

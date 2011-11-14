@@ -1,0 +1,91 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>WebFormsMvpModule</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>WebFormsMvpModule</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="WebFormsMvpModule.csproj" File="WebFormsMvpModule.csproj" ReplaceParameters="true">
+      <Folder Name="BuildScripts" TargetFolderName="BuildScripts">
+        <ProjectItem ReplaceParameters="false" TargetFileName="ModulePackage.targets">ModulePackage.targets</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="MSBuild.Community.Tasks.Targets">MSBuild.Community.Tasks.Targets</ProjectItem>
+      </Folder>
+      <Folder Name="ClientResources" TargetFolderName="ClientResources">
+        <Folder Name="css" TargetFolderName="css">
+          <ProjectItem ReplaceParameters="true" TargetFileName="common.css">common.css</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="edit.css">edit.css</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="settings.css">settings.css</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="view.css">view.css</ProjectItem>
+        </Folder>
+        <Folder Name="js" TargetFolderName="js">
+          <ProjectItem ReplaceParameters="true" TargetFileName="edit.js">edit.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="settings.js">settings.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="view.js">view.js</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Dependencies" TargetFolderName="Dependencies">
+        <Folder Name="DotNetNuke" TargetFolderName="DotNetNuke">
+          <ProjectItem ReplaceParameters="false" TargetFileName="DotNetNuke.dll">DotNetNuke.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="DotNetNuke.Web.Client.dll">DotNetNuke.Web.Client.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="DotNetNuke.Web.dll">DotNetNuke.Web.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="WebFormsMvp.dll">WebFormsMvp.dll</ProjectItem>
+        </Folder>
+        <Folder Name="MbUnit" TargetFolderName="MbUnit">
+          <ProjectItem ReplaceParameters="false" TargetFileName="Gallio.dll">Gallio.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="MbUnit.dll">MbUnit.dll</ProjectItem>
+        </Folder>
+        <Folder Name="Moq" TargetFolderName="Moq">
+          <ProjectItem ReplaceParameters="false" TargetFileName="Moq.chm">Moq.chm</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Moq.dll">Moq.dll</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Moq.pdb">Moq.pdb</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Moq.xml">Moq.xml</ProjectItem>
+        </Folder>
+        <Folder Name="MSBuild Community Tasks" TargetFolderName="MSBuild Community Tasks">
+          <ProjectItem ReplaceParameters="false" TargetFileName="MSBuild.Community.Tasks.msi">MSBuild.Community.Tasks.msi</ProjectItem>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="License.html">License.html</ProjectItem>
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="EditModel.cs">EditModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ViewModel.cs">ViewModel.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Presenters" TargetFolderName="Presenters">
+        <ProjectItem ReplaceParameters="true" TargetFileName="EditPresenter.cs">EditPresenter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ViewPresenter.cs">ViewPresenter.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ReleaseNotes.html">ReleaseNotes.html</ProjectItem>
+      <Folder Name="Views" TargetFolderName="Views">
+        <Folder Name="App_LocalResources" TargetFolderName="App_LocalResources">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Edit.ascx.resx">Edit.ascx.resx</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Settings.ascx.resx">Settings.ascx.resx</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="View.ascx.resx">View.ascx.resx</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Edit.ascx">Edit.ascx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Edit.ascx.cs">Edit.ascx.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Edit.ascx.designer.cs">Edit.ascx.designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IEditView.cs">IEditView.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IViewView.cs">IViewView.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.ascx">Settings.ascx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.ascx.cs">Settings.ascx.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.ascx.designer.cs">Settings.ascx.designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="View.ascx">View.ascx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="View.ascx.cs">View.ascx.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="View.ascx.designer.cs">View.ascx.designer.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="WebFormsMvpModule.dnn">WebFormsMvpModule.dnn</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

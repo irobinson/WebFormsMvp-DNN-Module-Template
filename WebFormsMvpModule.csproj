@@ -48,7 +48,10 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
     <Reference Include="WebFormsMvp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=537f18701145dff0, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dependencies\DotNetNuke\WebFormsMvp.dll</HintPath>
@@ -86,6 +89,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Dependencies\DotNetNuke\DotNetNuke.dll" />
+    <Content Include="Dependencies\DotNetNuke\DotNetNuke.Web.Client.dll" />
+    <Content Include="Dependencies\DotNetNuke\DotNetNuke.Web.dll" />
+    <Content Include="Dependencies\DotNetNuke\WebFormsMvp.dll" />
+    <Content Include="Documentation\Welcome.css" />
+    <Content Include="Documentation\Welcome.htm" />
     <Content Include="Views\App_LocalResources\Edit.ascx.resx" />
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +112,9 @@
     <Content Include="Views\View.ascx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="BuildScripts\ModulePackage.targets" />
+    <None Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
+    <None Include="Dependencies\MSBuild Community Tasks\MSBuild.Community.Tasks.msi" />
     <None Include="README.md" />
     <None Include="WebFormsMvpModule.dnn" />
   </ItemGroup>

@@ -99,6 +99,20 @@
       <Name>WebFormsMvpModule</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dependencies\DotNetNuke\DotNetNuke.dll" />
+    <Content Include="Dependencies\DotNetNuke\WebFormsMvp.dll" />
+    <Content Include="Dependencies\MbUnit\Gallio.dll" />
+    <Content Include="Dependencies\MbUnit\MbUnit.dll" />
+    <Content Include="Dependencies\Moq\Moq.dll" />
+    <Content Include="Dependencies\Moq\Moq.pdb" />
+    <Content Include="Dependencies\Moq\Moq.xml" />
+    <Content Include="Documentation\Welcome.css" />
+    <Content Include="Documentation\Welcome.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dependencies\Moq\Moq.chm" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
