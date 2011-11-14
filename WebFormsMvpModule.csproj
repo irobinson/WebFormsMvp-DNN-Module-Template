@@ -10,8 +10,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebFormsMvpModule</RootNamespace>
-    <AssemblyName>WebFormsMvpModule</AssemblyName>
+    <RootNamespace>$NameSpace$$safeprojectname$</RootNamespace>
+    <AssemblyName>$safeprojectname$</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -116,7 +116,7 @@
     <None Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
     <None Include="Dependencies\MSBuild Community Tasks\MSBuild.Community.Tasks.msi" />
     <None Include="README.md" />
-    <None Include="WebFormsMvpModule.dnn" />
+    <None Include="$safeprojectname$.dnn" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\App_LocalResources\View.ascx.resx" />
@@ -137,8 +137,8 @@
   </ProjectExtensions>
   <PropertyGroup>
     <Extension>zip</Extension>
-    <DNNFileName>WebFormsMvpModule</DNNFileName>
-    <PackageName>WebFormsMvpModule</PackageName>
+    <DNNFileName>$safeprojectname$</DNNFileName>
+    <PackageName>$safeprojectname$</PackageName>
     <MSBuildCommunityTasksPath>$(MSBuildProjectDirectory)\BuildScripts</MSBuildCommunityTasksPath>
   </PropertyGroup>
   <Import Project="BuildScripts\ModulePackage.Targets" />

@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="false" CodeBehind="Edit.ascx.cs" Inherits="WebFormsMvpModule.Views.Edit" %>
+﻿<%@ Control Language="C#" AutoEventWireup="false" CodeBehind="Edit.ascx.cs" Inherits="$Namespace$$safeprojectname$.Views.Edit" %>
 <%@ Register TagPrefix="dnn" TagName="Label" Src="~/controls/labelcontrol.ascx" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
 

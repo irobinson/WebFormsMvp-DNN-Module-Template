@@ -1,4 +1,4 @@
-﻿namespace WebFormsMvpModule.Presenters
+﻿namespace $Namespace$$safeprojectname$.Presenters
 {
     using DotNetNuke.Web.Mvp;
     using Models;
