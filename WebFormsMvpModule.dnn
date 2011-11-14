@@ -2,7 +2,7 @@
   <packages>
     <package name="WebFormsMvpModule" type="Module" version="00.00.01">
      
-      <friendlyName>WebFormsMvpModule</friendlyName>
+      <friendlyName>WebFormsMvp Module</friendlyName>
       <description></description>
       
       <owner>
@@ -13,12 +13,15 @@
       <license src="License.html"/>
       <releaseNotes src="ReleaseNotes.html" />
 
+      <!-- this will prevent users from installing the module on older versions of DNN -->
       <dependencies>
         <dependency type="CoreVersion">06.01.00</dependency>
       </dependencies>
 
       <components>
-        
+
+        <!-- this tells DNN to unpack our Resources.zip file during registration. -->
+        <!-- http://www.dotnetnuke.com/Resources/Wiki/Page/Manifest-ResourceFile-Component.aspx -->
         <component type="ResourceFile">
           <resourceFiles>
             <basePath>DesktopModules/WebFormsMvpModule</basePath>
@@ -28,16 +31,20 @@
           </resourceFiles>
         </component>
 
+        <!-- register the important module info about definitions/controls -->
+        <!-- http://www.dotnetnuke.com/Resources/Wiki/Page/Manifest-Module-Component.aspx-->
         <component type="Module">
           <desktopModule>
-            <moduleName>WebFormsMvpModule</moduleName>
+            <moduleName>WebFormsMvp Module</moduleName>
             <foldername>WebFormsMvpModule</foldername>
             <moduleDefinitions>
               <moduleDefinition>
-                <friendlyName>WebFormsMvpModule</friendlyName>
+                <friendlyName>WebFormsMvp Module</friendlyName>
                 <defaultCacheTime>0</defaultCacheTime>
                 <moduleControls>
                   <moduleControl>
+                    <!-- the default view control uses an empty key by convention -->
+                    <!-- all other registered controls require a key -->
                     <controlKey />
                     <controlSrc>DesktopModules/WebFormsMvpModule/Views/View.ascx</controlSrc>
                     <supportsPartialRendering>False</supportsPartialRendering>
@@ -45,17 +52,15 @@
                     <controlType>View</controlType>
                     <iconFile />
                     <helpUrl />
-                    <viewOrder>0</viewOrder>
                   </moduleControl>
                   <moduleControl>
-                    <controlKey />
+                    <controlKey>Edit</controlKey>
                     <controlSrc>DesktopModules/WebFormsMvpModule/Views/Edit.ascx</controlSrc>
                     <supportsPartialRendering>False</supportsPartialRendering>
                     <controlTitle />
                     <controlType>Edit</controlType>
                     <iconFile />
                     <helpUrl />
-                    <viewOrder>0</viewOrder>
                   </moduleControl>
                   <moduleControl>
                     <controlKey>Settings</controlKey>
@@ -65,7 +70,6 @@
                     <controlType>Edit</controlType>
                     <iconFile />
                     <helpUrl />
-                    <viewOrder>0</viewOrder>
                   </moduleControl>
                 </moduleControls>
               </moduleDefinition>
@@ -73,6 +77,7 @@
           </desktopModule>
         </component>
         
+        <!-- http://www.dotnetnuke.com/Resources/Wiki/Page/AssemblyComponent.aspx -->
         <component type="Assembly">
           <assemblies>
             <basePath>bin</basePath>
@@ -81,7 +86,31 @@
             </assembly>
           </assemblies>
         </component>
-       
+        
+        <!-- Register a SQL Script (remember to run an uninstall script too!) -->
+        <!-- http://www.dotnetnuke.com/Resources/Wiki/Page/Manifest-Script-Component.aspx -->
+        
+        <!--
+        <component type="Script">
+          <scripts>
+            <basePath>DesktopModules\WebFormsMvpModule</basePath>
+            <script type="Install">
+              <path>SqlScripts</path>
+              <name>00.00.01.SqlDataProvider</name>
+              <version>00.00.01</version>
+            </script>
+            <script type="UnInstall">
+              <path>SqlScripts</path>
+              <name>Uninstall.SqlDataProvider</name>
+              <version>00.00.01</version>
+            </script>
+          </scripts>
+        </component>
+        -->
+        
+        <!-- Do web.config updates! (remember to undo them on uninstall though!) -->
+        <!-- http://www.dotnetnuke.com/Resources/Wiki/Page/Manifest-Component-Installers-The-Config-Component.aspx -->
+
       </components>
     </package>
   </packages>
