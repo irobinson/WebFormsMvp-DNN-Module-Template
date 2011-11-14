@@ -1,35 +1,41 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <Name>WebFormsMvpModule</Name>
-    <Description>&lt;No description available&gt;</Description>
+    <Name>WebFormsMVP DNN Module</Name>
+    <Description>This is a project template for a DNN 6.1 (and up) WebFormsMVP Module.</Description>
     <ProjectType>CSharp</ProjectType>
-    <ProjectSubType>
-    </ProjectSubType>
-    <SortOrder>1000</SortOrder>
+    <ProjectSubType></ProjectSubType>
+    <SortOrder>10</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
-    <DefaultName>WebFormsMvpModule</DefaultName>
+    <DefaultName>MyNewModule</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
-    <Icon>__TemplateIcon.ico</Icon>
+    <Icon>DotNetNuke.ico</Icon>
   </TemplateData>
   <TemplateContent>
-    <Project TargetFileName="WebFormsMvpModule.csproj" File="WebFormsMvpModule.csproj" ReplaceParameters="true">
+    <CustomParameters>
+      <CustomParameter Name="$YourCompany$" Value="Awesome Cycles" />
+      <CustomParameter Name="$Namespace$" Value="AwesomeCycles.Dnn.Modules." />
+      <CustomParameter Name="$YourWebsite$" Value="http://www.dotnetnuke.com" />
+      <CustomParameter Name="$YourEmail$" Value="awesome.cycles@dotnetnuke.com" />
+      <CustomParameter Name="$CopyrightYear$" Value="2011" />
+    </CustomParameters>
+    <Project TargetFileName="$safeprojectname$.csproj" File="WebFormsMvpModule.csproj" ReplaceParameters="true">
       <Folder Name="BuildScripts" TargetFolderName="BuildScripts">
         <ProjectItem ReplaceParameters="false" TargetFileName="ModulePackage.targets">ModulePackage.targets</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="MSBuild.Community.Tasks.Targets">MSBuild.Community.Tasks.Targets</ProjectItem>
       </Folder>
       <Folder Name="ClientResources" TargetFolderName="ClientResources">
         <Folder Name="css" TargetFolderName="css">
-          <ProjectItem ReplaceParameters="true" TargetFileName="common.css">common.css</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="edit.css">edit.css</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="settings.css">settings.css</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="view.css">view.css</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="common.css">common.css</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="edit.css">edit.css</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="settings.css">settings.css</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="view.css">view.css</ProjectItem>
         </Folder>
         <Folder Name="js" TargetFolderName="js">
-          <ProjectItem ReplaceParameters="true" TargetFileName="edit.js">edit.js</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="settings.js">settings.js</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="view.js">view.js</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="edit.js">edit.js</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="settings.js">settings.js</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="view.js">view.js</ProjectItem>
         </Folder>
       </Folder>
       <Folder Name="Dependencies" TargetFolderName="Dependencies">
@@ -44,8 +50,8 @@
         </Folder>
       </Folder>
       <Folder Name="Documentation" TargetFolderName="Documentation">
-        <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.css">Welcome.css</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.htm">Welcome.htm</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Welcome.css">Welcome.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.htm" OpenInWebBrowser="true">Welcome.htm</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="License.html">License.html</ProjectItem>
       <Folder Name="Models" TargetFolderName="Models">
@@ -60,7 +66,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="ReleaseNotes.html">ReleaseNotes.html</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ReleaseNotes.html">ReleaseNotes.html</ProjectItem>
       <Folder Name="Views" TargetFolderName="Views">
         <Folder Name="App_LocalResources" TargetFolderName="App_LocalResources">
           <ProjectItem ReplaceParameters="true" TargetFileName="Edit.ascx.resx">Edit.ascx.resx</ProjectItem>
@@ -79,7 +85,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="View.ascx.cs">View.ascx.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="View.ascx.designer.cs">View.ascx.designer.cs</ProjectItem>
       </Folder>
-      <ProjectItem ReplaceParameters="false" TargetFileName="WebFormsMvpModule.dnn">WebFormsMvpModule.dnn</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="$safeprojectname$.dnn">WebFormsMvpModule.dnn</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>
