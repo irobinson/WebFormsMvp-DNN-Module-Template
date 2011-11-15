@@ -56,10 +56,12 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="License.html">License.html</ProjectItem>
       <Folder Name="Models" TargetFolderName="Models">
         <ProjectItem ReplaceParameters="true" TargetFileName="EditModel.cs">EditModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SettingsModel.cs">SettingsModel.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="ViewModel.cs">ViewModel.cs</ProjectItem>
       </Folder>
       <Folder Name="Presenters" TargetFolderName="Presenters">
         <ProjectItem ReplaceParameters="true" TargetFileName="EditPresenter.cs">EditPresenter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SettingsPresenter.cs">SettingsPresenter.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="ViewPresenter.cs">ViewPresenter.cs</ProjectItem>
       </Folder>
       <Folder Name="Properties" TargetFolderName="Properties">
@@ -77,6 +79,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Edit.ascx.cs">Edit.ascx.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Edit.ascx.designer.cs">Edit.ascx.designer.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="IEditView.cs">IEditView.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ISettingsView.cs">ISettingsView.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="IViewView.cs">IViewView.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.ascx">Settings.ascx</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.ascx.cs">Settings.ascx.cs</ProjectItem>
