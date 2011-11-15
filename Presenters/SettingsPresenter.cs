@@ -26,7 +26,9 @@
 
         private void SaveSettings(object sender, EventArgs eventArgs)
         {
-            new ModuleController().UpdateModuleSetting(this.ModuleId, "Description", this.View.Model.Description);
+            var moduleController = new ModuleController();
+            moduleController.UpdateModuleSetting(this.ModuleId, "Description", this.View.Model.Description);
+            moduleController.UpdateModuleSetting(this.ModuleId, "Title", this.View.Model.Title);
         }
 
         private string GetSetting(string settingKey)
