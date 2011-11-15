@@ -1,4 +1,4 @@
-﻿namespace $Namespace$$safeprojectname$.Tests
+﻿namespace $Namespace$$safeprojectname$
 {
     using MbUnit.Framework;
 

@@ -22,6 +22,18 @@ Checkout this 5 minute video to see how to set it up: http://screencast.com/t/MU
 
 These templates work just like normal VS templates, the only special stuff to note is that you should create the module project first and the test project second. Put the module project in the DesktopModules folder of your dev environment, and then put the tests project *inside* the module project folder. This'll give you a nice self contained dev environment. If that sounds confusing, check out the video, as that's exactly what it shows (and more).
 
+Note
+----
+There are a few items that you may wish to edit in the vstemplate files. Here are the default values:
+
+      <CustomParameter Name="$YourCompany$" Value="Awesome Cycles" />
+      <CustomParameter Name="$Namespace$" Value="AwesomeCycles.Dnn.Modules." />
+      <CustomParameter Name="$YourWebsite$" Value="http://www.dotnetnuke.com" />
+      <CustomParameter Name="$YourEmail$" Value="awesome.cycles@dotnetnuke.com" />
+      <CustomParameter Name="$CopyrightYear$" Value="2011" />
+
+I'd recommend updating the vstemplate file with new values and placing it back in the zip before placing in the visual studio templates folder and using it.
+
 Issues
 ======
 If you have any issues. Please open one here using the issues tab above.
