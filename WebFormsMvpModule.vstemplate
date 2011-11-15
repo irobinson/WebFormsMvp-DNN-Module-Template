@@ -45,6 +45,9 @@
           <ProjectItem ReplaceParameters="false" TargetFileName="DotNetNuke.Web.dll">DotNetNuke.Web.dll</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="WebFormsMvp.dll">WebFormsMvp.dll</ProjectItem>
         </Folder>
+        <Folder Name="CodeAnalysis" TargetFolderName="CodeAnalysis">
+          <ProjectItem ReplaceParameters="false" TargetFileName="WebFormsMvp.CodeAnalysisRules.VS2010.dll">WebFormsMvp.CodeAnalysisRules.VS2010.dll</ProjectItem>
+        </Folder>
         <Folder Name="MSBuild Community Tasks" TargetFolderName="MSBuild Community Tasks">
           <ProjectItem ReplaceParameters="false" TargetFileName="MSBuild.Community.Tasks.msi">MSBuild.Community.Tasks.msi</ProjectItem>
         </Folder>
@@ -89,6 +92,8 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="View.ascx.designer.cs">View.ascx.designer.cs</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.dnn">WebFormsMvpModule.dnn</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Correctness, Globalization, Security, and WebForms MVP.ruleset">Correctness, Globalization, Security, and WebForms MVP.ruleset</ProjectItem>      
+      <ProjectItem ReplaceParameters="false" TargetFileName="WebForms MVP.ruleset">WebForms MVP.ruleset</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

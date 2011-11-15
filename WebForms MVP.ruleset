@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="WebForms MVP Rules" Description="WebForms MVP Development Rules" ToolsVersion="10.0">
+  <RuleHintPaths>
+    <Path>Dependencies\CodeAnalysis</Path>
+  </RuleHintPaths>
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="MVP1101" Action="Warning" />
+    <Rule Id="MVP1102" Action="Warning" />
+    <Rule Id="MVP2101" Action="Warning" />
+    <Rule Id="MVP2102" Action="Warning" />
+    <Rule Id="MVP2106" Action="Warning" />
+  </Rules>
+</RuleSet>
