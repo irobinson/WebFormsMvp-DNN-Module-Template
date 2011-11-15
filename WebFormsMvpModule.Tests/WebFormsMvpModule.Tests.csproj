@@ -82,14 +82,14 @@
   <ItemGroup>
     <Reference Include="Gallio, Version=3.3.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Dependencies\MbUnit\Gallio.dll</HintPath>
+      <HintPath>Dependencies\MbUnit\Gallio.dll</HintPath>
     </Reference>
     <Reference Include="MbUnit, Version=3.3.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Dependencies\MbUnit\MbUnit.dll</HintPath>
+      <HintPath>Dependencies\MbUnit\MbUnit.dll</HintPath>
     </Reference>
     <Reference Include="Moq">
-      <HintPath>..\Dependencies\Moq\Moq.dll</HintPath>
+      <HintPath>Dependencies\Moq\Moq.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
