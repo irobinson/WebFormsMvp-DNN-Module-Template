@@ -22,6 +22,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>Correctness, Globalization, Security, and WebForms MVP.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,6 +32,8 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>Correctness, Globalization, Security, and WebForms MVP.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotNetNuke, Version=6.1.0.1171, Culture=neutral, processorArchitecture=MSIL">
@@ -115,6 +119,9 @@
     <Content Include="Views\View.ascx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Correctness, Globalization, Security, and WebForms MVP.ruleset" />
+    <None Include="WebForms MVP.ruleset" />
+    <None Include="Dependencies\CodeAnalysis\WebFormsMvp.CodeAnalysisRules.VS2010.dll" />
     <None Include="BuildScripts\ModulePackage.targets" />
     <None Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
     <None Include="Dependencies\MSBuild Community Tasks\MSBuild.Community.Tasks.msi" />
