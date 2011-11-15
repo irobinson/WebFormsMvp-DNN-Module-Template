@@ -58,6 +58,9 @@
   <ItemGroup>
     <Compile Include="Models\EditModel.cs" />
     <Compile Include="Models\ViewModel.cs" />
+    <Compile Include="Views\ISettingsView.cs" />
+    <Compile Include="Models\SettingsModel.cs" />
+    <Compile Include="Presenters\SettingsPresenter.cs" />
     <Compile Include="Presenters\EditPresenter.cs" />
     <Compile Include="Presenters\ViewPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
